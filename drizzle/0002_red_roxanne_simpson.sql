@@ -1,0 +1,1 @@
+ALTER TABLE `link` ADD `created_at` integer DEFAULT (unixepoch()) NOT NULL;

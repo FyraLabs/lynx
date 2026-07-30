@@ -1,0 +1,27 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1785380813138,
+      "tag": "0000_light_jubilee",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1785383126364,
+      "tag": "0001_chemical_vector",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1785427451431,
+      "tag": "0002_red_roxanne_simpson",
+      "breakpoints": true
+    }
+  ]
+}
