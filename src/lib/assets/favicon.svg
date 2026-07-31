@@ -1,1 +1,113 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="107" height="128" viewBox="0 0 107 128"><title>svelte-logo</title><path d="M94.157 22.819c-10.4-14.885-30.94-19.297-45.792-9.835L22.282 29.608A29.92 29.92 0 0 0 8.764 49.65a31.5 31.5 0 0 0 3.108 20.231 30 30 0 0 0-4.477 11.183 31.9 31.9 0 0 0 5.448 24.116c10.402 14.887 30.942 19.297 45.791 9.835l26.083-16.624A29.92 29.92 0 0 0 98.235 78.35a31.53 31.53 0 0 0-3.105-20.232 30 30 0 0 0 4.474-11.182 31.88 31.88 0 0 0-5.447-24.116" style="fill:#ff3e00"/><path d="M45.817 106.582a20.72 20.72 0 0 1-22.237-8.243 19.17 19.17 0 0 1-3.277-14.503 18 18 0 0 1 .624-2.435l.49-1.498 1.337.981a33.6 33.6 0 0 0 10.203 5.098l.97.294-.09.968a5.85 5.85 0 0 0 1.052 3.878 6.24 6.24 0 0 0 6.695 2.485 5.8 5.8 0 0 0 1.603-.704L69.27 76.28a5.43 5.43 0 0 0 2.45-3.631 5.8 5.8 0 0 0-.987-4.371 6.24 6.24 0 0 0-6.698-2.487 5.7 5.7 0 0 0-1.6.704l-9.953 6.345a19 19 0 0 1-5.296 2.326 20.72 20.72 0 0 1-22.237-8.243 19.17 19.17 0 0 1-3.277-14.502 17.99 17.99 0 0 1 8.13-12.052l26.081-16.623a19 19 0 0 1 5.3-2.329 20.72 20.72 0 0 1 22.237 8.243 19.17 19.17 0 0 1 3.277 14.503 18 18 0 0 1-.624 2.435l-.49 1.498-1.337-.98a33.6 33.6 0 0 0-10.203-5.1l-.97-.294.09-.968a5.86 5.86 0 0 0-1.052-3.878 6.24 6.24 0 0 0-6.696-2.485 5.8 5.8 0 0 0-1.602.704L37.73 51.72a5.42 5.42 0 0 0-2.449 3.63 5.79 5.79 0 0 0 .986 4.372 6.24 6.24 0 0 0 6.698 2.486 5.8 5.8 0 0 0 1.602-.704l9.952-6.342a19 19 0 0 1 5.295-2.328 20.72 20.72 0 0 1 22.237 8.242 19.17 19.17 0 0 1 3.277 14.503 18 18 0 0 1-8.13 12.053l-26.081 16.622a19 19 0 0 1-5.3 2.328" style="fill:#fff"/></svg>
+<svg
+	xmlns="http://www.w3.org/2000/svg"
+	x="0px"
+	y="0px"
+	width="18px"
+	height="18px"
+	viewBox="0 0 18 18"
+>
+	<style>
+	    @media (prefers-color-scheme: dark) {
+			eclipse, path {
+			    filter: invert()
+			}
+		}
+	</style>
+	<ellipse
+		cx="9"
+		cy="10"
+		rx="6.75"
+		ry="6.25"
+		fill="#1C1F21"
+		fill-opacity="0.3"
+		data-color="color-2"
+	></ellipse>
+	<path
+		d="M2.25 10V2.172C2.25 1.569 2.926 1.212 3.424 1.553L7 4"
+		stroke="#1C1F21"
+		stroke-width="1.5"
+		stroke-linecap="round"
+		stroke-linejoin="round"
+		fill="none"
+	></path>
+	<path
+		d="M15.75 10V2.172C15.75 1.569 15.074 1.212 14.576 1.553L11 4"
+		stroke="#1C1F21"
+		stroke-width="1.5"
+		stroke-linecap="round"
+		stroke-linejoin="round"
+		fill="none"
+	></path>
+	<path
+		d="M9 13.417C9.434 12.94 9.801 12.45 10 11.926C9.667 11.809 9.333 11.751 9 11.751C8.667 11.751 8.333 11.809 8 11.926C8.199 12.45 8.566 12.941 9 13.417Z"
+		fill="#1C1F21"
+		stroke="#1C1F21"
+		stroke-width="1.5"
+		stroke-linecap="round"
+		stroke-linejoin="round"
+	></path>
+	<path
+		d="M6 10.5C6.55228 10.5 7 10.0523 7 9.5C7 8.94772 6.55228 8.5 6 8.5C5.44772 8.5 5 8.94772 5 9.5C5 10.0523 5.44772 10.5 6 10.5Z"
+		fill="#1C1F21"
+	></path>
+	<path
+		d="M12 10.5C12.5523 10.5 13 10.0523 13 9.5C13 8.94772 12.5523 8.5 12 8.5C11.4477 8.5 11 8.94772 11 9.5C11 10.0523 11.4477 10.5 12 10.5Z"
+		fill="#1C1F21"
+	></path>
+	<path
+		d="M15.442 11.871C15.642 11.28 15.75 10.652 15.75 10C15.75 6.548 12.728 3.75 9 3.75C5.272 3.75 2.25 6.548 2.25 10C2.25 10.652 2.358 11.28 2.558 11.871"
+		stroke="#1C1F21"
+		stroke-width="1.5"
+		stroke-linecap="round"
+		stroke-linejoin="round"
+		fill="none"
+	></path>
+	<path
+		d="M11.655 15.748C10.84 16.071 9.942 16.25 9 16.25C8.057 16.25 7.16 16.071 6.345 15.748"
+		stroke="#1C1F21"
+		stroke-width="1.5"
+		stroke-linecap="round"
+		stroke-linejoin="round"
+		fill="none"
+	></path>
+	<path
+		d="M4.25 11.75L0.75 12"
+		stroke="#1C1F21"
+		stroke-width="1.5"
+		stroke-linecap="round"
+		stroke-linejoin="round"
+		fill="none"
+	></path>
+	<path
+		d="M5.25 13.5L1.5 15"
+		stroke="#1C1F21"
+		stroke-width="1.5"
+		stroke-linecap="round"
+		stroke-linejoin="round"
+		fill="none"
+	></path>
+	<path
+		d="M13.75 11.75L17.25 12"
+		stroke="#1C1F21"
+		stroke-width="1.5"
+		stroke-linecap="round"
+		stroke-linejoin="round"
+		fill="none"
+	></path>
+	<path
+		d="M12.75 13.5L16.5 15"
+		stroke="#1C1F21"
+		stroke-width="1.5"
+		stroke-linecap="round"
+		stroke-linejoin="round"
+		fill="none"
+	></path>
+	<path
+		d="M9 13V16.25"
+		stroke="#1C1F21"
+		stroke-width="1.5"
+		stroke-linecap="round"
+		stroke-linejoin="round"
+		fill="none"
+	></path>
+</svg>

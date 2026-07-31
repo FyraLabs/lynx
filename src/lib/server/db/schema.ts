@@ -6,8 +6,10 @@ export const link = sqliteTable('link', {
 		.primaryKey()
 		.$defaultFn(() => crypto.randomUUID()),
 	slug: text('slug').notNull().unique(),
-  url: text('url').notNull(),
-	createdAt: integer('created_at', { mode: 'timestamp' }).notNull().default(sql`(unixepoch())`)
+	url: text('url').notNull(),
+	createdAt: integer('created_at', { mode: 'timestamp' })
+		.notNull()
+		.default(sql`(unixepoch())`)
 });
 
 export * from './auth.schema';

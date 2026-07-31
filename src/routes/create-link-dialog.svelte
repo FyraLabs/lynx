@@ -13,14 +13,17 @@
 
 	let open = $state(false);
 
-	const form = superForm(untrack(() => initialForm), {
-		validators: zod4Client(CreateLinkForm),
-		onUpdate({ form }) {
-			if (form.valid) {
-				open = false;
+	const form = superForm(
+		untrack(() => initialForm),
+		{
+			validators: zod4Client(CreateLinkForm),
+			onUpdate({ form }) {
+				if (form.valid) {
+					open = false;
+				}
 			}
 		}
-	});
+	);
 
 	const { form: formData, enhance } = form;
 </script>

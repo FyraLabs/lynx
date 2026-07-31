@@ -4,6 +4,7 @@
 	import * as Table from '$lib/components/ui/table/index.js';
 	import CreateLinkDialog from './create-link-dialog.svelte';
 	import cat from './cat.txt?raw';
+	import TrashIcon from '$lib/assets/trash.svg?raw';
 
 	const { data } = $props();
 </script>
@@ -33,7 +34,12 @@
 						<Table.Cell class="text-end">
 							<form action="?/deleteLink" method="POST" use:enhance>
 								<input type="hidden" name="id" value={link.id} />
-								<Button variant="outline" size="sm" type="submit">X</Button>
+								<Button variant="outline" size="sm" type="submit"
+									><span class="dark:invert">
+										<!-- eslint-disable-next-line svelte/no-at-html-tags -->
+										{@html TrashIcon}</span
+									></Button
+								>
 							</form>
 						</Table.Cell>
 					</Table.Row>
