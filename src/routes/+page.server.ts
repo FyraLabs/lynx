@@ -6,6 +6,12 @@ import { CreateLinkForm } from './schema.ts';
 import { setError, superValidate } from 'sveltekit-superforms';
 import { desc, eq } from 'drizzle-orm';
 
+function randomSlug(length = 6): string {
+	const alphabet = 'abcdefghijklmnopqrstuvwxyz0123456789';
+	const bytes = crypto.getRandomValues(new Uint8Array(length));
+	return Array.from(bytes, (byte) => alphabet[byte % alphabet.length]).join('');
+}
+
 export const load = async (event) => {
 	if (!event.locals.user) return {};
 
@@ -39,11 +45,13 @@ export const actions = {
 			});
 		}
 
+		const slug = form.data.slug || randomSlug();
+
 		const db = getDb(event.platform!.env.DB);
 		const results = await db
 			.insert(link)
 			.values({
-				slug: form.data.slug,
+				slug,
 				url: form.data.url
 			})
 			.onConflictDoNothing()
@@ -53,10 +61,7 @@ export const actions = {
 			return setError(form, 'slug', 'Slug already exists');
 		}
 
-		await event.platform!.env.KV.put(
-			`link:${form.data.slug}`,
-			JSON.stringify({ url: form.data.url })
-		);
+		await event.platform!.env.KV.put(`link:${slug}`, JSON.stringify({ url: form.data.url }));
 
 		return {
 			form

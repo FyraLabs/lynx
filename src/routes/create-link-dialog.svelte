@@ -46,7 +46,11 @@
 				<Form.Control>
 					{#snippet children({ props })}
 						<Form.Label>Slug</Form.Label>
-						<Input placeholder="calicocorp" {...props} bind:value={$formData.slug} />
+						<Input
+							placeholder="Leave blank for random"
+							{...props}
+							bind:value={$formData.slug}
+						/>
 					{/snippet}
 				</Form.Control>
 				<Form.FieldErrors />
