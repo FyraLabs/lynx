@@ -8,6 +8,7 @@
 		"binding": "ASSETS",
 		"directory": ".svelte-kit/cloudflare"
 	},
+	"keep_vars": true,
 	"workers_dev": true,
 	"preview_urls": true,
 	"d1_databases": [
