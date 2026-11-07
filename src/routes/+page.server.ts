@@ -27,7 +27,8 @@ export const actions = {
 	login: async (event) => {
 		const response = await event.locals.auth.api.signInSocial({
 			body: {
-				provider: 'sso'
+				provider: 'sso',
+				callbackURL: '/'
 			}
 		});
 
