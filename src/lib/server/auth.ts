@@ -17,7 +17,8 @@ const authConfig = {
 					providerId: 'sso',
 					clientId: env.SSO_CLIENT_ID!,
 					clientSecret: env.SSO_CLIENT_SECRET,
-					discoveryUrl: env.SSO_DISCOVERY_URL
+					discoveryUrl: env.SSO_DISCOVERY_URL,
+					scopes: ['openid', 'email', 'profile']
 				}
 			]
 		}),
