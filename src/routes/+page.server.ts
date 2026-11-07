@@ -25,13 +25,13 @@ export const load = async (event) => {
 
 export const actions = {
 	login: async (event) => {
-		const response = await event.locals.auth.api.signInWithOAuth2({
+		const response = await event.locals.auth.api.signInSocial({
 			body: {
-				providerId: 'sso'
+				provider: 'sso'
 			}
 		});
 
-		if (response.redirect) {
+		if (response.url) {
 			return redirect(303, response.url);
 		}
 	},
